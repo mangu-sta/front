@@ -1,0 +1,197 @@
+/* ===============================
+   🟢 메인 페이지 전용 스타일
+================================= */
+
+
+/* 메인 콘텐츠 */
+.main-content {
+    
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow: visible;
+}
+
+
+
+/* 2x2 그리드 */
+.sub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+/* 블록 */
+.block {
+    background: var(--block-bg);
+    border: 2px solid var(--block-border);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.block h2 {
+    color: var(--block-h2);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+}
+.block p {
+    color: var(--block-p);
+    font-size: 0.95rem;
+}
+
+/* 스케줄러 */
+.block.scheduler {
+    width: 100%;
+      margin-bottom: 1.5rem; /* ✅ sub-grid와의 간격 확보 */
+
+}
+
+/* 타이머 영역 */
+.timer-section {
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+.timer-section h3 {
+    font-size: 1.6rem;
+    color: var(--block-h2);
+    margin-bottom: 1.5rem;
+}
+.timer-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+/* ✅ 타이머 카드 공통 */
+.timer-card {
+    border: 2px solid var(--block-border);
+    background: var(--block-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 280px; /* 기존 150px → 확장 */
+    min-height: 250px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✅ "모험의 섬" 카드 내부에서 타이머와 네비게이션 정렬 */
+.timer-card .d-flex {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* ✅ 내부 .card 크기 조정 */
+.timer-card .card {
+    background: var(--block-bg);
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 1rem;
+}
+/* ✅ 네비게이션 화살표 정렬 */
+.nav-arrow {
+    font-size: 1.5rem;
+    color: var(--hamburger-bg);
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease;
+}
+.nav-arrow:hover {
+    transform: scale(1.2);
+    color: #F9C94E;
+}
+
+/* ✅ 보상 리스트 (추가용) */
+.reward-list {
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+.reward-list li {
+    list-style: '🌟 ';
+    margin-left: 0.5rem;
+}
+
+.timer-card h4 {
+    margin-bottom: 0.5rem;
+    /*color: #F9C94E;*/
+    color: #A67700;
+    font-size: 1.2rem;
+}
+.timer-card span {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+   🧭 노션 사이드박스
+================================= */
+.notion-sidebox {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: var(--card-bg, #FFF8E1);
+    border: 2px solid var(--block-border, #FBC02D);
+    border-right: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 1rem 1.2rem;
+    text-decoration: none;
+    color: var(--text-color, #222);
+    font-weight: 600;
+    font-size: 0.95rem;
+    z-index: 999;
+    transition: all 0.25s ease;
+}
+
+.notion-sidebox:hover {
+    background: #F9C94E;
+    color: #222;
+    transform: translateY(-50%) translateX(-5px);
+}
+
+.notion-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}

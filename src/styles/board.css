@@ -1,0 +1,17 @@
+.category-bar {
+  margin-bottom: 1rem;
+}
+.category-bar button {
+  margin: 0 5px;
+  border: 2px solid #fbc02d;
+  background: #fff8e1;
+}
+.category-bar button.active {
+  background: #f9c94e;
+}
+.post-item {
+  border: 1px solid #f9c94e;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 6px;
+}

@@ -1,0 +1,84 @@
+.character-card {
+  display: inline-block;
+  width: 150px;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: #fff8e1;
+  border: 2px solid #fbc02d;
+  border-radius: 8px;
+  cursor: grab;
+}
+.auction-box {
+  margin-top: 2rem;
+  border: 2px solid #f9c94e;
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* ===============================
+   💰 경매 계산기 (로아 스타일)
+================================= */
+.auction-box {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff8e1;
+  border: 2px solid #b8955b;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.auction-box h3 {
+  color: #5b3e1f;
+  margin-bottom: 1rem;
+}
+
+.auction-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.input-row input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #bca47c;
+  border-radius: 6px;
+  flex: 1;
+}
+
+.reset-btn, .calc-btn {
+  background: #7a5b43;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.calc-btn:hover {
+  background: #5a3e2d;
+}
+
+.auction-results {
+  background: #faf4e3;
+  border: 1px solid #d6b97a;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.auction-results h4 {
+  margin-top: 1rem;
+  color: #4a3625;
+}
+
+.auction-results p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
